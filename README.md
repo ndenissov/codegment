@@ -4,7 +4,6 @@ A lightweight, modern desktop code editor featuring syntax highlighting, multi-f
 
 [![PyPI Version](https://img.shields.io/pypi/v/codegment)](https://pypi.org/project/codegment/)
 [![PyPI Total Downloads](https://img.shields.io/pepy/dt/codegment?label=total%20downloads)](https://pepy.tech/project/codegment)
-[![PyPI Monthly Downloads](https://img.shields.io/pypi/dm/codegment)](https://pypi.org/project/codegment/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/codegment)](https://pypi.org/project/codegment/)
 [![License](https://img.shields.io/github/license/ndenissov/codegment)](https://github.com/ndenissov/codegment/blob/main/LICENSE)
 
