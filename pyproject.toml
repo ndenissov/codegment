@@ -1,18 +1,17 @@
-[tool.poetry]
+[project]
 name = "codegment"
-version = "1.0.1"
+version = "1.0.2"
 description = "A code editor with syntax highlighting and auto-completion built with Kivy and Pygments"
-authors = ["Nikita Denissov <n.denissov@proton.me>"]
+authors = [
+    {name = "Nikita Denissov", email = "n.denissov@proton.me"}
+]
 readme = "README.md"
 license = "LGPL-2.1-or-later"
-repository = "https://github.com/ndenissov/codegments"
-homepage = "https://github.com/ndenissov/codegments"
 keywords = ["code-editor", "kivy", "kivymd", "pygments", "syntax-highlighting"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: X11 Applications",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
@@ -20,17 +19,23 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Text Editors",
 ]
-packages = [{include = "codegment"}]
+requires-python = ">=3.10"
+dependencies = [
+    "kivy>=2.2.0",
+    "kivymd>=1.1.1",
+    "pygments>=2.14.0",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.10"
-kivy = ">=2.2.0"
-kivymd = ">=1.1.1"
-pygments = ">=2.14.0"
+[project.urls]
+Homepage = "https://github.com/ndenissov/codegments"
+Repository = "https://github.com/ndenissov/codegments"
 
-[tool.poetry.scripts]
+[project.scripts]
 codegment = "codegment.app:run"
 
+[tool.poetry]
+packages = [{include = "codegment"}]
+
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=2.0.0"]
 build-backend = "poetry.core.masonry.api"
